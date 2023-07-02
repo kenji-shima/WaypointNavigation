@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="mapbox_extendableButton_paddingStart">8dp</dimen>
+    <dimen name="mapbox_extendableButton_minHeight">52dp</dimen>
+    <dimen name="mapbox_extendableButton_minWidth">40dp</dimen>
+    <dimen name="mapbox_extendableButton_iconSize">24dp</dimen>
+    <dimen name="mapbox_extendableButton_spacing">8dp</dimen>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/direction_criteria"
+        android:onClick="updateDirectionCriteria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="8dp"
+        android:alpha="0.7"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_baseline_directions_car_24"
+        />
+
+</LinearLayout>

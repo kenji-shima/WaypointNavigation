@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <Button
+        android:id="@+id/isochrone"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:padding="0dp"
+        android:alpha="0.6"
+        android:onClick="updateMins"
+        android:background="@drawable/mapbox_bg_button"
+        android:text="@string/eternity" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Waypointナビ</string>
+    <string name="action_settings">設定</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="search_hint">検索</string>
+    <string name="back">&lt;- 戻る</string>
+    <string name="eternity">無制限</string>
+    <string name="history_removed">履歴を削除しました</string>
+    <string name="error_occurred">エラーが発生しました</string>
+    <string name="restaurant">レストラン</string>
+    <string name="cafe">レストラン>カフェ</string>
+    <string name="convenience">医療>病院</string>
+    <string name="minutes_short">分</string>
+    <string name="country_code">jp</string>
+    <string name="language_code">ja</string>
+    <string name="results">件</string>
+    <string name="isochrone_info">最大30分の移動距離圏内の結果が表示されます。5分、10分、30分毎の移動距離は地図上にピンク色で表示されます。</string>
+    <string name="mapbox_search_sdk_search_result_view_empty_recent_searches" tools:ignore="ExtraTranslation">履歴</string>
+    <string name="mapbox_search_sdk_search_result_view_recent_searches_title" tools:ignore="ExtraTranslation">履歴</string>
+</resources>

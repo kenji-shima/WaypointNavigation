@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MapboxStyleExtendableButton">
+        <item name="android:minHeight">@dimen/mapbox_extendableButton_minHeight</item>
+        <item name="android:paddingStart">@dimen/mapbox_extendableButton_paddingStart</item>
+        <item name="android:paddingEnd">@dimen/mapbox_extendableButton_paddingStart</item>
+        <item name="android:elevation">0dp</item>
+        <item name="extendableButtonBackground">@drawable/mapbox_bg_button</item>
+        <item name="extendableButtonIconTint">@color/colorOnSurface</item>
+        <item name="extendableButtonTextAppearance">@style/MapboxExtendableButtonTextAppearance
+        </item>
+    </style>
+</resources>

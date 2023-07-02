@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.mapbox.navigation.dropin.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:accessToken="@string/mapbox_access_token">
+
+    </com.mapbox.navigation.dropin.NavigationView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_on_top_of_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        />
+
+    <LinearLayout
+        android:id="@+id/poi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/search_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:onClick="backToMap"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/poi_search"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:focusableInTouchMode="true"
+                android:iconifiedByDefault="true"
+                android:queryHint="Search View"
+                app:showAsAction="always" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <include layout="@layout/direction_criteria_button"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="25"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:text="@string/isochrone_info"
+                android:textSize="11sp"
+                />
+
+            <!--include layout="@layout/isochrone_button" //-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="25"
+                android:layout_height="match_parent"
+                android:gravity="right">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/mapbox_bg_button"
+                    android:onClick="clearHistory"
+                    android:padding="@dimen/fab_margin"
+                    android:src="@drawable/ic_baseline_auto_delete_24" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:padding="8dp">
+
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mapbox_bg_button"
+                android:src="@drawable/ic_baseline_restaurant_24"
+                android:onClick="searchRestaurant"/>
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/mapbox_bg_button"
+                android:src="@drawable/ic_baseline_coffee_24"
+                android:onClick="searchCafe"/>
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/mapbox_bg_button"
+                android:src="@drawable/ic_baseline_local_convenience_store_24"
+                android:onClick="searchConvenience"/>
+
+        </LinearLayout>
+
+        <com.mapbox.search.ui.view.SearchResultsView
+            android:id="@+id/poi_search_results_view"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:clipToPadding="false"
+            android:paddingTop="22dp"
+            android:paddingBottom="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+
+            />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

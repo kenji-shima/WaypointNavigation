@@ -1,0 +1,13 @@
+{
+  "version" : 1,
+  "locations" : [],
+  "vehicles" : [
+    {
+      "name" : "the only vehicle",
+      "routing_profile" : "mapbox/driving",
+      "start_location" : "スタート",
+      "end_location" : "エンド"
+    }
+  ],
+  "services" : []
+}

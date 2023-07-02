@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7671248,35.68123620000001]
+      },
+      "properties": {
+        "type": "origin",
+        "comment": "スタート"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7671248,35.68123620000001]
+      },
+      "properties": {
+        "type": "destination",
+        "comment": "エンド"
+      }
+    }
+  ]
+}

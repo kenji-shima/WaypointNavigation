@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Waypoint Navigation</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="search_hint">Search</string>
+    <string name="back">&lt;- Back</string>
+
+    <string name="eternity">∞</string>
+    <string name="history_removed">History removed</string>
+    <string name="error_occurred">Error occurred</string>
+    <string name="restaurant">restaurant</string>
+    <string name="cafe">cafe</string>
+    <string name="convenience">convenience</string>
+    <string name="minutes_short">\u0020mins</string>
+    <string name="country_code">us</string>
+    <string name="language_code">en</string>
+    <string name="results">\u0020results</string>
+    <string name="isochrone_info">Will show results for a maximum of 30 minutes travel distance. Travel time of 5, 10, and 30 minutes will be shown on the map in pink.</string>
+    <string name="mapbox_access_token" translatable="false">pk.eyJ1Ijoia2Vuamktc2hpbWEiLCJhIjoiY2xhZ2NmZ3BiMGFqbzNubThpbWMxOXU3MCJ9.JlXUW8MwwX1LhhMnbWyUQw</string>
+    <!--string name="mapbox_access_token" translatable="false">pk.eyJ1IjoibWFwYm94LW1hcC1kZXNpZ24iLCJhIjoiY2syeHpiaHlrMDJvODNidDR5azU5NWcwdiJ9.x0uSqSWGXdoFKuHZC5Eo_Q</string//-->
+</resources>
