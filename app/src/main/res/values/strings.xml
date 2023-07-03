@@ -17,5 +17,4 @@
     <string name="results">\u0020results</string>
     <string name="isochrone_info">Will show results for a maximum of 30 minutes travel distance. Travel time of 5, 10, and 30 minutes will be shown on the map in pink.</string>
     <string name="mapbox_access_token" translatable="false">%YOUR_KEY%</string>
-    <!--string name="mapbox_access_token" translatable="false">pk.eyJ1IjoibWFwYm94LW1hcC1kZXNpZ24iLCJhIjoiY2syeHpiaHlrMDJvODNidDR5azU5NWcwdiJ9.x0uSqSWGXdoFKuHZC5Eo_Q</string//-->
 </resources>
